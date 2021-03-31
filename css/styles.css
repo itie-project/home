@@ -1,0 +1,60 @@
+/* BASE STYLE */
+body { 
+	/*
+	width:90%; 
+	margin: 1% auto; 
+	border: 2px solid #000000; 
+	background-color: #fff; 
+	box-sizing: border-box;
+	*/
+} 
+
+section {
+	width:90%; 
+	margin: 1% auto; 
+	border: 2px solid #000000; 
+	background-color: #fff; 
+	box-sizing: border-box;
+}
+
+.cv_item_title {text-align: justify;}
+.institution {font-weight:bold;} 
+#CurrentSituation .place, #Education .place, #Work_Experience_Recent .place, #Work_Experience .place {color:red; text-align: right;}
+#CurrentSituation .date, #Education .date, #Work_Experience_Recent .date, #Work_Experience .date {color:blue; font-style: italic; text-align: right;}
+#Publications .date {font-weight:bold;}
+#Publications .place {font-style:default;}
+.div_clear { content: ''; display: block; clear: both;}
+.columnLeft { box-sizing: border-box; float: left; padding: 3px 10px 3px 10px; width:80%}
+.columnRight { box-sizing: border-box; float: right; padding: 3px 10px 3px 10px; width:20%}
+
+img:hover {opacity: 0.5;}
+
+.h1, .h2, .h3, h1, h2, h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 3px 10px 3px 10px; 
+}
+
+/*@media (min-width:1200px) { body {width:1000px; border: 5px solid #000000;}  } */
+h1::first-letter {color: #f00;}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.columnLeft{width:100%;}
+	.columnRight{width:100%;}
+}
