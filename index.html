@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title> ITIE - Tomographie d'Impedance Electrique</title>
+	<!-- My fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap">
+	<!-- My styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- MathJax -->
+    <!-- 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	-->
+	<script type="text/javascript">
+		function turnFrench(){
+			console.log("turn to French");
+			[...document.styleSheets[3].cssRules].find(x=> x.selectorText=='.fr').style.display= 'inherit';
+			[...document.styleSheets[3].cssRules].find(x=> x.selectorText=='.en').style.display= 'none';
+		};
+		function turnEnglish(){
+			console.log("turn to English");
+			[...document.styleSheets[3].cssRules].find(x=> x.selectorText=='.fr').style.display= 'none';
+			[...document.styleSheets[3].cssRules].find(x=> x.selectorText=='.en').style.display= 'inherit';
+		};
+	</script>
+	<style>
+		/* The .fr and .en CSS rules need to be within html document to be dynamically modified with JS*/
+		.fr {display:none;}     /* default: hidding French*/
+		.en {display:inherit;}  /* default: displaying English*/
+	</style>
+</head>
+<!--
+<header>
+	<div>Header - to do</div>
+	<a href="https://www.researchgate.net/profile/Antoine_Dupre">ResearchGate profile</a>
+</header>
+-->
+<body>
+
+</body>
